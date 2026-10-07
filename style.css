@@ -1,0 +1,34 @@
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#f4f7fb;color:#1d2a3a}
+.container{max-width:920px;margin:auto;padding:24px}
+header{background:linear-gradient(135deg,#073b73,#0f6cad);color:#fff;padding:30px;border-radius:20px;text-align:center;margin-bottom:22px;box-shadow:0 12px 30px rgba(0,0,0,.12)}
+header h1{margin:8px 0 4px;font-size:32px}
+header h2{margin:4px 0 8px;font-size:20px;font-weight:600}
+header p{margin:0;opacity:.92}
+.course-label,.course-badge{display:inline-block;background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.35);padding:7px 13px;border-radius:999px;font-weight:700;letter-spacing:1px}
+.question-card{background:#fff;border:1px solid #dce5ef;border-radius:16px;padding:20px;margin:16px 0;box-shadow:0 5px 16px rgba(15,76,129,.06)}
+.question-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}
+.number{background:#0f4c81;color:#fff;width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:bold}
+.lesson{font-size:13px;background:#e8f1fa;color:#0f4c81;padding:6px 10px;border-radius:999px;font-weight:bold}
+.question-card h3{line-height:1.45;margin:12px 0 16px}
+.choices{display:grid;gap:9px}
+.choice{display:flex;gap:10px;padding:12px;border:1px solid #d6dee8;border-radius:10px;cursor:pointer;transition:.2s;background:#fff}
+.choice:hover{border-color:#0f6cad;background:#f6fbff}
+.choice input{margin-top:3px}
+.choice.correct{border-color:#2f8f46;background:#edf8f0}
+.choice.wrong{border-color:#c53b3b;background:#fff0f0}
+.submit-btn,.btn,.start-btn{display:block;width:100%;border:0;border-radius:12px;background:linear-gradient(135deg,#0f4c81,#1681c5);color:#fff;padding:15px;font-weight:bold;text-align:center;text-decoration:none;margin:24px 0;cursor:pointer;font-size:16px}
+.submit-btn:hover,.btn:hover,.start-btn:hover{filter:brightness(1.06);transform:translateY(-1px)}
+.score-card{background:#fff;border:2px solid #0f4c81;border-radius:16px;text-align:center;padding:22px;margin-bottom:22px}
+.score-card h2{margin-top:0}
+.feedback{margin-top:12px;padding:10px;border-radius:8px;font-weight:bold}
+.feedback.ok{background:#edf8f0;color:#237037}
+.feedback.bad{background:#fff0f0;color:#a62d2d}
+.landing-page{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:20px;background:radial-gradient(circle at top left,#1681c5,transparent 35%),radial-gradient(circle at bottom right,#2563eb,transparent 35%),linear-gradient(135deg,#082b4f,#0f4c81);color:#fff}
+.landing-card{width:min(520px,100%);padding:44px 34px;text-align:center;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.24);border-radius:26px;backdrop-filter:blur(12px);box-shadow:0 20px 50px rgba(0,0,0,.28)}
+.landing-card h1{font-size:38px;margin:18px 0 8px}
+.subtitle{font-size:22px;font-weight:700;margin:0 0 8px}
+.description{opacity:.9;margin-bottom:28px}
+.start-btn{max-width:320px;margin:0 auto;background:#fff;color:#0f4c81}
+@media(max-width:600px){.container{padding:12px}header{padding:24px 15px}.question-card{padding:15px}.landing-card{padding:34px 20px}.landing-card h1{font-size:30px}}
